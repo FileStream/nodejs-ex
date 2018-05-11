@@ -1,7 +1,8 @@
 //  OpenShift sample Node application
 var express = require('express'),
     app     = express(),
-    morgan  = require('morgan');
+    morgan  = require('morgan'),
+    retrieve = require('./values/retrieveValues.js');
     
 Object.assign=require('object-assign')
 
@@ -65,7 +66,7 @@ app.get('/studentform', function (req, res) {
   if (db) {
     var col = db.collection('students');
     // Create a document with request IP and current time of request
-    col.insert({name:req.firstname.value+req.lastname.value,likes:[]});
+    col.insert({name:retrieve()[0],likes:retrieve()[1]});
   }
 });
 

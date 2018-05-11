@@ -19,9 +19,9 @@ describe('Basic routes tests', function() {
 
     })
 
-    it('GET to /pagecount should return 200', function(done){
+    it('GET to /studentform should return 200', function(done){
         chai.request(reqServer)
-        .get('/pagecount')
+        .get('/studentform')
         .end(function(err, res) {
             res.should.have.status(200);
             done();

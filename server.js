@@ -3,7 +3,7 @@ var express = require('express'),
     fs      = require('fs'),
     app     = express(),
     morgan  = require('morgan'),
-    retrieve = require('retrieveValues');
+    retrieve = require('./views/retrieveValues.js');
     
 Object.assign=require('object-assign')
 

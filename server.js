@@ -66,6 +66,7 @@ app.get('/studentform', function (req, res) {
     var col = db.collection('students');
     // Create a document with request IP and current time of request
     col.insert({name:req.firstname.value+req.lastname.value,likes:[]});
+  }
 });
 
 

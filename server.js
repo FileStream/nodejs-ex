@@ -63,11 +63,13 @@ app.get('/studentform', function (req, res) {
   // initialized.
   if (!db) {
     initDb(function(err){});
+      res.send('error');
   }
   if (db) {
     var col = db.collection('students');
     // Create a document with request IP and current time of request
     col.insert({name:retrieve()[0],likes:retrieve()[1]});
+      res.send('success');
   }
 });
 

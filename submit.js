@@ -1,5 +1,5 @@
 var mongo = require('mongodb').MongoClient;
-  
+   
 window.insert = function() {
   if (document.getElementById("firstname").value==''||document.getElementById("lastname").value=='') {
    document.getElementById("notif").style.color = "red";

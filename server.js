@@ -1,8 +1,9 @@
 //  OpenShift sample Node application
 var express = require('express'),
+    fs      = require('fs'),
     app     = express(),
     morgan  = require('morgan'),
-    retrieve = require('retrieveValues.js');
+    retrieve = require('retrieveValues');
     
 Object.assign=require('object-assign')
 

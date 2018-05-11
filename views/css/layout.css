@@ -1,0 +1,12 @@
+@font-face {
+    font-family: hifi;
+    src: url(orbitron-light.otf);
+}
+
+body {
+  font-family:hifi;
+}
+
+button {
+ font-family:hifi;   
+}

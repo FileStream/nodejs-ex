@@ -1,9 +1,8 @@
 <html><head>
-<link rel="stylesheet" type="css" href="./css/layout.css">
-<script type="javascript" src="submit.js"></script>
+<link rel="stylesheet" type="text/css" href="css/layout.css">
 </head>
 <body style="background-image:url('https://c.wallhere.com/photos/2b/63/DNA-179428.jpg!d');background-size:cover;padding:100px;">
-<form class="submission" name="userdata" style="color:white">
+<form class="submission" name="userdata" style="color:white" action="studentform">
 First name:<br>
 <input type="text" id="firstname">
 <br>
@@ -14,7 +13,7 @@ Please select all things that apply to you:
 <legend>
 <input type="checkbox" name="likes" value=0>STEM<input type="checkbox" name="likes" value=1>Biology
 </legend>
-<button type="button" onclick="insert()" style="margin-top:20px">Submit</button>
+<input type="submit" value="Submit" style="margin-top:20px"></input>
 </form>
 <p id="notif"></p>
 </body></html>

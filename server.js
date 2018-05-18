@@ -72,6 +72,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/studentform', function (req, res) {
+    try {
   // try to initialize the db on every request if it's not already
   // initialized.
   if (!db) {
@@ -84,6 +85,7 @@ app.get('/studentform', function (req, res) {
     col.insert({name:retrieve()[0],likes:retrieve()[1]});
       res.send('{success:true}');
   }
+    } catch (err) {console.error(err)}
 });
 
 app.get('/pagecount', function (req, res) {
